@@ -40,6 +40,13 @@ program.command('delete')
         require(res('delete'));
     });
 
+// 定义 update 命令
+program.command('update')
+    .description('update a template')
+    .action(() => {
+        require(res('update'));
+    });
+
 // 监听 help 命令
 program.on('--help', function(){
     console.log('');
@@ -49,6 +56,7 @@ program.on('--help', function(){
     console.log('    $ mlin list');
     console.log('    $ mlin init');
     console.log('    $ mlin delete');
+    console.log('    $ mlin update');
     console.log('');
 });
 
