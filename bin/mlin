@@ -42,6 +42,7 @@ program.command('delete')
 
 // 监听 help 命令
 program.on('--help', function(){
+    console.log('');
     console.log('  Examples:');
     console.log('');
     console.log('    $ mlin add');
