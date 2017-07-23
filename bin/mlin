@@ -1,0 +1,59 @@
+#!/usr/bin/env node
+
+process.env.NODE_PATH = __dirname + '/../node_modules/';
+
+const { resolve } = require('path');
+const program = require('commander');
+const res = command => resolve(__dirname, '../commands/', command);
+
+// 获取脚手架版本
+program.version(require('../package').version );
+
+// 定义使用方法
+program.usage('<command>');
+
+// 定义 add 命令
+program.command('add')
+    .description('Add a new template')
+    .action(() => {
+        require(res('add'));
+    });
+
+// 定义 list 命令
+program.command('list')
+    .description('List all the templates')
+    .action(() => {
+        require(res('list'));
+    });
+
+// 定义 init 命令
+program.command('init')
+    .description('Generate a new project')
+    .action(() => {
+        require(res('init'));
+    });
+
+// 定义 delete 命令
+program.command('delete')
+    .description('Delete a template')
+    .action(() => {
+        require(res('delete'));
+    });
+
+// 监听 help 命令
+program.on('--help', function(){
+    console.log('  Examples:');
+    console.log('');
+    console.log('    $ mlin add');
+    console.log('    $ mlin list');
+    console.log('    $ mlin init');
+    console.log('    $ mlin delete');
+    console.log('');
+});
+
+program.parse(process.argv);
+
+// 当命令参数为 0 时，激活 help 命令
+if(!program.args.length){
+    program.help();
+}
