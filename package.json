@@ -1,0 +1,31 @@
+{
+  "name": "mlin-cli",
+  "version": "0.0.1",
+  "description": "A scaffolding to quickly generates projects.",
+  "bin": {
+    "mlin": "bin/mlin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wupengju/mlin.git"
+  },
+  "keywords": [
+    "mlin",
+    "cli",
+    "es6"
+  ],
+  "author": "menglin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrainlau/mlin/issues"
+  },
+  "homepage": "https://github.com/wupengju/mlin#readme",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "cli-table": "^0.3.1",
+    "commander": "^2.11.0",
+    "download-git-repo": "^1.0.1",
+    "inquirer": "^3.2.0",
+    "ora": "^1.3.0"
+  }
+}
