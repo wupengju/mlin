@@ -40,23 +40,27 @@ Open terminal and type `mlin` or `mlin -h` , you'll see the help infomation belo
 ```
 
 ## Commands
+
 ### add
 add new template.
+
 ### list
 display template.
+
 ### init
 choose a template to create a new project.
+
 ### delete
 delete a template.
 
 ## Template
 Templates were saved in template.json that has default structure like eg.1 and add new template like eg.2:
-** eg.1 **
+
 ```
+// eg.1
 {}
-```
-** eg.2 **
-```
+
+// eg.2
 {"test":{"templateUrl":"https://github.com/wupengju/The-question-bank-script.git","branch":"master"}}
 ```
 
