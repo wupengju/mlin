@@ -42,7 +42,7 @@ program.command('delete')
 
 // 定义 update 命令
 program.command('update')
-    .description('update a template')
+    .description('Update a template')
     .action(() => {
         require(res('update'));
     });
