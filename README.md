@@ -30,6 +30,7 @@ Open terminal and type `mlin` or `mlin -h` , you'll see the help infomation belo
     list     List all the templates
     init     Generate a new project
     delete   Delete a template
+    update   Update a template
 
   Examples:
 
@@ -37,6 +38,7 @@ Open terminal and type `mlin` or `mlin -h` , you'll see the help infomation belo
     $ mlin list
     $ mlin init
     $ mlin delete
+    $ mlin update
 ```
 
 ## Commands
